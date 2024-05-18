@@ -13,7 +13,7 @@ export class HealthController {
         description: 'Health status',
         type: HealthStatus,
     })
-    getHealth(): HealthStatus {
+    getHealth(): Promise<HealthStatus> {
         return this.healthService.getHealth();
     }
 }
