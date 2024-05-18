@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { HealthCode, HealthStatus } from './entities/health.entity';
-import { sql } from '../sql';
+import { sql } from '../sql/sql.service';
 
 @Injectable()
 export class HealthService {

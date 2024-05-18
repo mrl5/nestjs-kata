@@ -14,6 +14,7 @@ npm ci --ignore-scripts
 ```console
 export $(grep -v '^#' .env.local | xargs)
 docker compose up db
+ln -s .env.local .env
 npm run start
 ```
 ```console
